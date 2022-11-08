@@ -1,58 +1,103 @@
-body {
-    background-color: gray;
-    display: flex;
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+* {
+    font-family: 'Permanent Marker', cursive;
 }
 
-.left-menu-content {
+/* left-menu bar */
+.left-menu {
     text-align: center;
 }
 
 .p1,.p2{
-    box-shadow: 2px 2px 4px #000000;
     padding: 2.5px 10px;
-}
-
-.container {
-    width: 50%;
-    height: auto;
-    border: wheat dashed 5px;
-    padding: 20px;
-    margin: 0 auto;
+    border: 1px solid;
+    border-radius: 5px 5px;
+    margin: 1px 0px;
     background-color: white;
 }
 
-span h1 {
-    text-align: center;
-    color: lightblue;
-    text-shadow: 5px 5px 20px pink, 5px 5px 20px yellow;
+.p1:hover,.p2:hover{
+    box-shadow: 2px 2px 4px #000000;
 }
 
-dt {
+/* left-menu bar */
+
+/* body and main */
+body {
+    background-color:#ACC8E5;
+    display: flex;
+    color: #112A46;
+}
+
+.container, .showcase {
+    font-size: 20px;
+}
+
+.container {
+    width: 80%;
+    height: auto;
+    /* border: wheat dashed 5px; */
+    padding: 20px;
+    margin: 0 auto;
+    /* background-color: white; */
+}
+
+.showcase {
+    display: flex;
+}
+
+h1 {
+    text-align: left;
+    color: #112A46; 
+    font-size: 80px;
+}
+
+.container h2 {
+    font-size: 40px;
+    /* font-style: italic; */
+    color: white;
+    text-shadow: 2px 0px gray;
+}
+
+.title {
     font-weight: bold;
 }
 
-dd {
-    font-style: italic;
+.description {
+    padding: 0% 1%;
+    color: white;
+    text-shadow: 2px 0px gray;
 }
 
-@media (max-width: 600px) {
- body {
-    background-color: yellow;
-    width: auto;
-    display: inline-block;
- }
-
+a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
 }
 
-@media print {
-    body{
-		background-color: white;
-		font-family: Times;
-        font-family:'Courier New', Courier, monospace;
+a:visited {
+    text-decoration: none;
+}
+
+figure img {
+    width: 100%;
+    border-radius: 5px 5px;
+    box-shadow: 2px 2px 4px #000000;
+}
+/* body and main */
+
+@media (max-width: 641px) {
+    body, .showcase {
+        width: auto;
+        display: inline-block;
     }
-    
-    figure{
-        float: right;
-        display: none;
-    }
+
+    .p1, .p2 {
+    width: 50%;
+    padding: 2.5px 10px;
+    border: 1px solid;
+    border-radius: 5px 5px;
+    margin: 1px auto;
+        }
 }

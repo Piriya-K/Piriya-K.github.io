@@ -1,0 +1,220 @@
+        @import url('https://fonts.googleapis.com/css2?family=Dangrek&display=swap');
+        
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+
+        body {
+            font-family: 'Dangrek', cursive; background-image: linear-gradient(to top, #2c3e50, #4ca1af);
+            background-repeat: no-repeat;
+        }
+
+        img {
+            width: 100px;
+        }
+        
+        .top {
+            display: flex;
+        }
+
+        h1 {
+            font-size: 250%;
+            text-shadow: 5px 5px 10px orangered;
+        }
+        
+        main {
+            width: 50%;
+            margin: 0 auto;  
+            color: white
+        }
+        
+        /* footer section */
+        #footer {
+            width: 100%;
+            height: 20vh; 
+            margin: auto; 
+            margin-top: 1%;
+            margin-bottom: 5%;
+            color: black; 
+            text-align:left; 
+            background-image: url("../travelsite/photo/footer.jpg"); 
+            background-repeat: no-repeat; 
+            background-size: contain;
+            background-position: right;
+            background-color: white;
+            align-self: center;
+        }
+
+        .container {
+            height: 80px;
+        }
+
+        /* animation for .image */
+        @keyframes image-animation {
+            0% {
+                background-image: url(../travelsite/photo/img1.jpg);
+            }
+            14.29% {
+                background-image: url(../travelsite/photo/img3.jpg);
+            }
+            25.58% {
+                background-image: url(../travelsite/photo/img4.jpg);
+            }
+            42.87% {
+                background-image: url(../travelsite/photo/img5.jpg);
+            }
+            57.16% {
+                background-image: url(../travelsite/photo/img6.jpg);
+            }
+            71.45% {
+                background-image: url(../travelsite/photo/img7.jpg);
+            }
+            85.74% {
+                background-image: url(../travelsite/photo/img8.jpg);
+            }
+            100% {
+                background-image: url(../travelsite/photo/img9.jpg);
+            }
+            
+        }
+
+        .image {
+            height: 50vh;
+            background-image: url(../travelsite/photo/img1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            animation-name: image-animation;
+            animation-direction: alternate;
+            animation-play-state: running;
+            animation-timing-function: ease-in-out;
+            animation-duration: 27s;
+            animation-fill-mode: forwards;
+            animation-iteration-count: infinite;
+            box-shadow: 4px 4px 30px 0px black;
+        }
+
+        /* animation for .caption */
+        @keyframes caption1-animation {
+            0% { opacity: 1;}
+            14.29% { opacity: 0;}
+            25.58% { opacity: 0;}
+            42.87% { opacity: 0;}
+            57.16% { opacity: 0;}
+            71.45% { opacity: 0;}
+            85.74% { opacity: 0;}
+            100% { opacity: 0;}
+        }
+        
+        .caption1 {
+            animation: caption1-animation 27s ease-in-out infinite alternate;
+        }
+
+        @keyframes caption2-animation {
+            0% { opacity: 0;}
+            14.29% { opacity: 1;}
+            25.58% { opacity: 0;}
+            42.87% { opacity: 0;}
+            57.16% { opacity: 0;}
+            71.45% { opacity: 0;}
+            85.74% { opacity: 0;}
+            100% { opacity: 0;}
+        }
+
+        .caption2 {
+            animation: caption2-animation 27s ease-in-out infinite alternate;
+        }
+
+        @keyframes caption3-animation {
+            0% { opacity: 0;}
+            14.29% { opacity: 0;}
+            25.58% { opacity: 1;}
+            42.87% { opacity: 0;}
+            57.16% { opacity: 0;}
+            71.45% { opacity: 0;}
+            85.74% { opacity: 0;}
+            100% { opacity: 0;}
+        }
+
+        .caption3 {
+            animation: caption3-animation 27s ease-in-out infinite alternate;
+        }
+
+        @keyframes caption4-animation {
+            0% { opacity: 0;}
+            14.29% { opacity: 0;}
+            25.58% { opacity: 0;}
+            42.87% { opacity: 1;}
+            57.16% { opacity: 0;}
+            71.45% { opacity: 0;}
+            85.74% { opacity: 0;}
+            100% { opacity: 0;}
+        }
+
+        .caption4 {
+            animation: caption4-animation 27s ease-in-out infinite alternate;
+        }
+
+        @keyframes caption5-animation {
+            0% { opacity: 0;}
+            14.29% { opacity: 0;}
+            25.58% { opacity: 0;}
+            42.87% { opacity: 0;}
+            57.16% { opacity: 1;}
+            71.45% { opacity: 0;}
+            85.74% { opacity: 0;}
+            100% { opacity: 0;}
+        }
+
+        .caption5 {
+            animation: caption5-animation 27s ease-in-out infinite alternate;
+        }
+
+        @keyframes caption6-animation {
+            0% { opacity: 0;}
+            14.29% { opacity: 0;}
+            25.58% { opacity: 0;}
+            42.87% { opacity: 0;}
+            57.16% { opacity: 0;}
+            71.45% { opacity: 1;}
+            85.74% { opacity: 0;}
+            100% { opacity: 0;}
+        }
+
+        .caption6 {
+            animation: caption6-animation 27s ease-in-out infinite alternate;
+        }
+
+        @keyframes caption7-animation {
+            0% { opacity: 0;}
+            14.29% { opacity: 0;}
+            25.58% { opacity: 0;}
+            42.87% { opacity: 0;}
+            57.16% { opacity: 0;}
+            71.45% { opacity: 0;}
+            85.74% { opacity: 1;}
+            100% { opacity: 0;}
+        }
+
+        .caption7 {
+            animation: caption7-animation 27s ease-in-out infinite alternate;
+        }
+
+        @keyframes caption8-animation {
+            0% { opacity: 0;}
+            14.29% { opacity: 0;}
+            25.58% { opacity: 0;}
+            42.87% { opacity: 0;}
+            57.16% { opacity: 0;}
+            71.45% { opacity: 0;}
+            85.74% { opacity: 0;}
+            100% { opacity: 1;}
+        }
+
+        .caption8 {
+            animation: caption8-animation 27s ease-in-out infinite alternate;
+        }
+
+        

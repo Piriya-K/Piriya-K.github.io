@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New City Bakeries</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="top">
+      <img src="logo.png" alt="logo">
+      <!--logo from https://www.pngplay.com/image/96277-->
+      <h1>New City Bakeries</h1>
+      <h2>Call +281 281 4465</h2>
+    </div>
+    <main>
+        <form id="myform" method="get">
+          <div class="container">
+            <fieldset>
+              <legend>Personal Information</legend>
+                <label for="firstname">First Name<br></label><input type="text" id="firstname" name="firstname" maxlength="25" placeholder="First Name" required autofocus><br>
+                <label for="lastname">Last Name<br></label><input type="text" id="lastname" name="lastname" maxlength="25" placeholder="Last Name" required><br>
+                <label for="address">Address<br></label><input type="text" id="address" name="address" required><br>
+                <label for="postalcode">Postal Code<br></label><input type="text" id="postalcode" name="postalcode" placeholder="L9L 9L9" required><br>
+                <label for="phone">Phone Number<br></label><input type="tel" name="tel" id="phone" placeholder="123 456 7899" required><br>
+                <label for="email">Email <br></label><input type="email" id="email" name="email" placeholder="example@example.net" required><br>
+            </fieldset>
+            <br>
+            <fieldset>
+              <legend>Menu</legend>  
+                <!--Choose Cake Type-->
+                <h4>Choose Cake Type:</h4>
+                <span onclick="picksheetCake()">
+                <input type="radio" name="cakeType" id="sheetCake" value="Sheet Cake" onclick="picksheetCake()">
+                <label for="sheetCake">Sheet Cake</label>
+                </span>
+                <br>
+                <span onclick="pickroundCake()">
+                <input type="radio" name="cakeType" id="roundCake" value="Round Cake" onclick="pickroundCake()">
+                <label for="roundCake">Round Cake</label>
+                </span>
+                
+                <!--Choose Layer-->
+                <h4>Choose Cake Layer:</h4>
+                <input type="radio" name="selectedLayer" id="1" value="1" checked><label for="1">1</label>
+                <input type="radio" name="selectedLayer" id="2" value="2"><label for="2">2</label>
+                <input type="radio" name="selectedLayer" id="3" value="3"><label for="3">3</label>
+
+                <!-- SheetCake Width & Length Input -->
+                <h4>Cake Width</h4>
+                <input type="number" id="cakeWidth" name="cakeWidth" min="30" max="45" placeholder="Between 30 - 45">
+
+                <h4>Cake Length</h4>
+                <input type="number" id="cakeLength" name="cakeLength" min="30" max="60" placeholder="Between 30 - 60">
+
+                <!--RoundCake Radius Input-->
+                <h4>Cake Radius</h4>
+                <input type="number" id="radius" name="radius" min="15" max="30" placeholder="Between 15 - 30">
+
+                <!--Additional Choices-->
+                <h4>Additional Choices</h4>
+                <input type="checkbox" name="creamcheese" id="creamcheese" value="creamcheese"><label for="creamcheese">Cream Cheese Icing as an Extra $5</label>
+                <br>
+                <input type="checkbox" name="fruitalmond" id="fruitalmond" value="fruitalmond"><label for="fruitalmond">Fruit and Almond Topping $7</label>
+                <br>
+                <input type="checkbox" name="fruitjam" id="fruitjam" value="fruitjam"><label for="fruitjam">Fruit Jam Filling $4</label>
+            </fieldset>
+          </div>
+            <br>
+            <p><span id="result"></span></p>
+            <div class="buttons">
+              <input type="submit" id="submit" value="Submit" name="submit" onclick="validateFirstName(); return false;">
+              <button onclick="reset();">Reset Button</button> <!--resets the border color in the js script-->
+            </div>
+        </form>
+    </main>
+  </body>
+</html>
