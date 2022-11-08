@@ -1,0 +1,58 @@
+body {
+    background-color: gray;
+    display: flex;
+}
+
+.left-menu-content {
+    text-align: center;
+}
+
+.p1,.p2{
+    box-shadow: 2px 2px 4px #000000;
+    padding: 2.5px 10px;
+}
+
+.container {
+    width: 50%;
+    height: auto;
+    border: wheat dashed 5px;
+    padding: 20px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+span h1 {
+    text-align: center;
+    color: lightblue;
+    text-shadow: 5px 5px 20px pink, 5px 5px 20px yellow;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    font-style: italic;
+}
+
+@media (max-width: 600px) {
+ body {
+    background-color: yellow;
+    width: auto;
+    display: inline-block;
+ }
+
+}
+
+@media print {
+    body{
+		background-color: white;
+		font-family: Times;
+        font-family:'Courier New', Courier, monospace;
+    }
+    
+    figure{
+        float: right;
+        display: none;
+    }
+}
