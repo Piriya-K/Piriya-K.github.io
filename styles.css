@@ -4,100 +4,261 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/* left-menu bar */
-.left-menu {
-    text-align: center;
-}
+@media only screen and (min-width: 600px) {
 
-.p1,.p2{
-    padding: 2.5px 10px;
-    border: 1px solid;
-    border-radius: 5px 5px;
-    margin: 1px 0px;
-    background-color: white;
-}
-
-.p1:hover,.p2:hover{
-    box-shadow: 2px 2px 4px #000000;
-}
-
-/* left-menu bar */
-
-/* body and main */
-body {
-    background-color:#ACC8E5;
-    display: flex;
-    color: #112A46;
-}
-
-.container, .showcase {
-    font-size: 20px;
-}
-
-.container {
-    width: 80%;
-    height: auto;
-    /* border: wheat dashed 5px; */
-    padding: 20px;
-    margin: 0 auto;
-    /* background-color: white; */
-}
-
-.showcase {
-    display: flex;
-}
-
-h1 {
-    text-align: left;
-    color: #112A46; 
-    font-size: 80px;
-}
-
-.container h2 {
-    font-size: 40px;
-    /* font-style: italic; */
-    color: white;
-    text-shadow: 2px 0px gray;
-}
-
-.title {
-    font-weight: bold;
-}
-
-.description {
-    padding: 0% 1%;
-    color: white;
-    text-shadow: 2px 0px gray;
-}
-
-a {
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-a:visited {
-    text-decoration: none;
-}
-
-figure img {
-    width: 100%;
-    border-radius: 5px 5px;
-    box-shadow: 2px 2px 4px #000000;
-}
-/* body and main */
-
-@media (max-width: 641px) {
-    body, .showcase {
-        width: auto;
-        display: inline-block;
+    [class*="mobile"] {
+        display: none;
     }
 
-    .p1, .p2 {
-    width: 50%;
-    padding: 2.5px 10px;
-    border: 1px solid;
-    border-radius: 5px 5px;
-    margin: 1px auto;
-        }
+    body {
+        background-color: lightslategray;
+        display: flex;
+        color: #112A46;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* left-menu bar */
+    .left-menu-desktop {
+        text-align: center;
+        position: fixed;
+        width: 10%;
+        height: 100%;
+        margin-left: 2vw;
+        
+    }
+
+    .left-menu-desktop h2 {
+        font-size: 2.5vw;
+        padding-left: 0vw;
+    }
+
+    .projectbutton-desktop {
+        padding: 2.5px 10px;
+        border: 1px solid;
+        border-radius: 5px 5px;
+        margin: 1px 0px;
+        background-color: white;
+    }
+
+    .projectbutton-desktop p {
+        font-size: 1.5vw;
+    }
+
+    .left-side-desktop figure:hover {
+        box-shadow: 2px 2px 4px #000000;
+    }
+
+    .container-desktop {
+        width: 80%;
+        height: auto;
+        margin-left: 12vw;
+    }
+
+    .container-desktop, .showcase-desktop {
+        font-size: 20px;
+    }
+
+    .showcase-desktop {
+        display: grid;
+    }
+
+    
+
+    .frame-desktop {
+        display: flex;
+        width: 100%;
+    }
+
+    .logos-desktop {
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .left-side-desktop, .right-side-desktop {
+        width: 50%;
+    }
+
+    .container-desktop h1 {
+        padding-left: 3vw;
+        font-size: 4vw;
+        text-align: left;
+        color: #112A46; 
+    }
+
+    .container-desktop h2 {
+        padding-left: 3vw;
+        font-size: 3vw;
+        color: white;
+        text-shadow: 2px 0px gray;
+    }
+
+    .title-desktop {
+        font-weight: bold;
+        font-size: 2vw;
+    }
+
+    .description-desktop {
+        padding: 0% 1%;
+        color: white;
+        text-shadow: 2px 0px gray;
+        font-size: 1.5vw;
+    }
+
+    a {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    a:visited {
+        text-decoration: none;
+    }
+
+    figure img {
+        width: 100%;
+        border-radius: 5px 5px;
+        box-shadow: 2px 2px 4px #000000;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+    [class*="desktop"] {
+        display: none;
+    }
+
+    body {
+        background-color: lightslategray;
+        color: #112A46;
+        padding: 0;
+        margin: 0;
+    }
+
+    .header-mobile {
+        position: relative;
+    }
+    
+    .inner-header-mobile {
+        text-align: left;
+        position: fixed;
+        width: 100%;
+        background-color: #112A46;
+        border: solid;
+    }
+
+    .header-dropdownbtn-mobile {
+        font-size: 3vw;
+    }
+
+    .dropdown-content-mobile {
+        display: none;
+        position: absolute;
+    }
+
+    .show {display: block;}
+
+    .projectbutton-mobile {
+        text-align: center;
+        /* padding: 2.5px 10px; */
+        border: 1px solid;
+        border-radius: 5px 5px;
+        /* margin: 1px 0px; */
+        background-color: white;
+        width: 10vw;
+    }
+
+    .projectbutton-mobile p {
+        font-size: 1.5vw;
+    }
+
+    .left-side-mobile figure:hover {
+        box-shadow: 2px 2px 4px #000000;
+    }
+
+    .container-mobile, .showcase-mobile {
+        font-size: 20px;
+    }
+
+    .showcase-mobile {
+        display: grid;
+    }
+
+    .container-mobile {
+        width: 80%;
+        height: auto;
+        /* border: wheat dashed 5px; */
+        padding: 20px;
+        margin: 0 auto;
+        /* background-color: white; */
+    }
+
+    .frame-mobile {
+        /* display: flex; */
+        width: 100%;
+    }
+
+    .logos-mobile {
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .left-side-mobile, .right-side-mobile {
+        width: 100%;
+    }
+
+    .right-side-mobile {
+        padding: 0% 10% 0% 10%;
+    }
+
+    .container-mobile h1 {
+        padding-left: 3vw;
+        font-size: 4vw;
+        text-align: left;
+        color: #112A46; 
+    }
+
+    .container-mobile h2 {
+        padding-left: 3vw;
+        font-size: 3vw;
+        color: white;
+        text-shadow: 2px 0px gray;
+    }
+
+    .title-mobile {
+        font-weight: bold;
+        font-size: 2vw;
+    }
+
+    .description-mobile {
+        padding: 0% 1%;
+        color: white;
+        text-shadow: 2px 0px gray;
+        font-size: 1.5vw;
+    }
+
+    a {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    a:visited {
+        text-decoration: none;
+    }
+
+    figure img {
+        width: 100%;
+        border-radius: 5px 5px;
+        box-shadow: 2px 2px 4px #000000;
+    }
 }
