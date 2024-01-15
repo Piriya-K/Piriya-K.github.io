@@ -50,8 +50,6 @@
     }
 
     .container-desktop {
-        width: 80%;
-        height: auto;
         margin-left: 12vw;
     }
 
@@ -95,6 +93,27 @@
         font-size: 3vw;
         color: white;
         text-shadow: 2px 0px gray;
+    }
+
+    .container-desktop h3 {
+        padding-left: 3vw;
+        font-size: 2vw;
+        color: white;
+        text-shadow: 2px 0px gray;
+    }
+    
+    .reach-me-container-desktop {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .reach-me-container-desktop img {
+        margin-left: 1rem;
+    }
+
+    .reach-me-logo-desktop {
+        padding-left: 2rem;
     }
 
     .title-desktop {
@@ -177,73 +196,72 @@
         font-size: 1.5vw;
     }
 
-    .left-side-mobile figure:hover {
+    .frame-mobile figure:hover {
         box-shadow: 2px 2px 4px #000000;
     }
 
-    .container-mobile, .showcase-mobile {
-        font-size: 20px;
-    }
-
-    .showcase-mobile {
-        display: grid;
-    }
-
     .container-mobile {
-        width: 80%;
-        height: auto;
-        /* border: wheat dashed 5px; */
-        padding: 20px;
-        margin: 0 auto;
-        /* background-color: white; */
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .reach-me-container-mobile {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .reach-me-container-mobile img {
+        margin-left: 2rem;
+    }
+
+    .container-mobile h1 {
+        padding: 0 10vw;
+        font-size: 8vw;
+        text-align: left;
+        color: #112A46; 
+    }
+
+    .container-mobile h2 {
+        padding: 0 10vw;
+        font-size: 6vw;
+        color: white;
+        text-shadow: 2px 0px gray;
+    }
+
+    .container-mobile h3 {
+        padding: 0 10vw;
+        font-size: 6vw;
+        color: white;
+        text-shadow: 2px 0px gray;
     }
 
     .frame-mobile {
-        /* display: flex; */
         width: 100%;
+        padding: 5vw 0;
     }
 
     .logos-mobile {
         display: flex;
         width: 100%;
         height: auto;
-        justify-content: flex-start;
+        justify-content: center;
         align-items: center;
         flex-wrap: wrap;
     }
 
-    .left-side-mobile, .right-side-mobile {
-        width: 100%;
-    }
-
-    .right-side-mobile {
-        padding: 0% 10% 0% 10%;
-    }
-
-    .container-mobile h1 {
-        padding-left: 3vw;
-        font-size: 4vw;
-        text-align: left;
-        color: #112A46; 
-    }
-
-    .container-mobile h2 {
-        padding-left: 3vw;
-        font-size: 3vw;
-        color: white;
-        text-shadow: 2px 0px gray;
-    }
-
     .title-mobile {
         font-weight: bold;
-        font-size: 2vw;
+        font-size: 8vw;
+        padding: 0 10vw;
     }
 
     .description-mobile {
         padding: 0% 1%;
         color: white;
         text-shadow: 2px 0px gray;
-        font-size: 1.5vw;
+        font-size: 5vw;
+        padding: 0 10vw;
     }
 
     a {
