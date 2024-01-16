@@ -96,8 +96,7 @@
     }
 
     .container-desktop h3 {
-        padding-left: 3vw;
-        font-size: 2vw;
+        font-size: 3vw;
         color: white;
         text-shadow: 2px 0px gray;
     }
@@ -112,8 +111,13 @@
         margin-left: 1rem;
     }
 
+    .reach-me-text-desktop {
+        margin-left: 3rem;
+    }
+
     .reach-me-logo-desktop {
         padding-left: 2rem;
+        width: 50%
     }
 
     .title-desktop {
@@ -196,23 +200,18 @@
         font-size: 1.5vw;
     }
 
-    .frame-mobile figure:hover {
-        box-shadow: 2px 2px 4px #000000;
-    }
-
     .container-mobile {
         width: 100%;
         padding-top: 20px;
     }
 
-    .reach-me-container-mobile {
-        display: flex;
-        justify-content: start;
-        align-items: center;
+    .frame-mobile figure:hover {
+        box-shadow: 2px 2px 4px #000000;
     }
 
-    .reach-me-container-mobile img {
-        margin-left: 2rem;
+    .reach-me-logo-mobile {
+        padding: 0 10vw;
+        position: relative;
     }
 
     .container-mobile h1 {
